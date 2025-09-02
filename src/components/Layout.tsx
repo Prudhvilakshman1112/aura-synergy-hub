@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Sidebar } from "./navigation/Sidebar";
+import { TopNavbar } from "./navigation/TopNavbar";
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,9 +8,9 @@ interface LayoutProps {
 export const Layout = ({ children }: LayoutProps) => {
   return (
     <div className="min-h-screen bg-gradient-background">
-      <Sidebar />
-      <main className="ml-64 transition-all duration-300">
-        <div className="p-8">
+      <TopNavbar />
+      <main className="pt-20">
+        <div className="container mx-auto px-6 py-8">
           {children}
         </div>
       </main>

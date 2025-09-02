@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import MentalCoach from "./pages/MentalCoach";
 import PhysicalCoach from "./pages/PhysicalCoach";
 import Roadmaps from "./pages/Roadmaps";
+import DayTracker from "./pages/DayTracker";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ const App = () => (
           <Route path="/mental" element={<MentalCoach />} />
           <Route path="/physical" element={<PhysicalCoach />} />
           <Route path="/roadmaps" element={<Roadmaps />} />
+          <Route path="/tracker" element={<DayTracker />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
