@@ -1,5 +1,6 @@
 import { Layout } from "@/components/Layout";
 import { DashboardCard } from "@/components/dashboard/DashboardCard";
+import { PhysicalMetrics } from "@/components/dashboard/PhysicalMetrics";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
@@ -94,6 +95,11 @@ const PhysicalCoach = () => {
               </Button>
             </div>
           </DashboardCard>
+        </div>
+
+        {/* Physical Metrics Section */}
+        <div className="mb-8">
+          <PhysicalMetrics />
         </div>
 
         {/* Health Query & Tracking Section */}
