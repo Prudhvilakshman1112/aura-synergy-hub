@@ -4,6 +4,7 @@ import { ProgressRing } from "@/components/dashboard/ProgressRing";
 import { StreakReminder } from "@/components/dashboard/StreakReminder";
 import { SessionCard } from "@/components/dashboard/SessionCard";
 import { ContributionTracker } from "@/components/dashboard/ContributionTracker";
+import { PhysicalMetrics } from "@/components/dashboard/PhysicalMetrics";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -103,6 +104,11 @@ const Index = () => {
         {/* Session Card - Full Width */}
         <div className="mb-8">
           <SessionCard />
+        </div>
+
+        {/* Physical Metrics Card - Full Width */}
+        <div className="mb-8">
+          <PhysicalMetrics />
         </div>
 
         {/* LinkedIn Profile */}
